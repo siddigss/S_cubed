@@ -10,8 +10,6 @@ We are going to solve this problem using the <i>Active Contoues Method<i/> which
 ![Imgur](https://i.imgur.com/ZEE3uon.gif)
 ![Imgur](https://i.imgur.com/CyrZhW1.gif)<br>
 
-By evolution of a curve we mean a sequence of curves ![](https://latex.codecogs.com/svg.latex?u_0%2Cu_1%2Cu_2%2C....). We want this equence to get closer to the <i>edges<i/>(The places where the gradient of the image is high) of our shape as the index of sequence increase.<br>
-![Imgur](https://i.imgur.com/t5FGmJ1.png)<br>
-
-
-
+We want our curve to be a the <i>edges<i/>(The places where the change of the image colors is high as in the image below) of the image.
+![Edges of the image](https://i.imgur.com/t5FGmJ1.png)<br>
+In other words we look for a curve if our curve ![](https://latex.codecogs.com/svg.latex?%5C%7B%28x_1%2Cy_1%29%2C%28x_2%2Cy_2%29%2C...%2C%28x_n%2Cy_n%29%5C%7D) that <i>locally<i/> (because we only want the boundary of our shape even if it not the absolute maximum) maximizes ![](https://latex.codecogs.com/svg.latex?%5Csum_%7Bi%3D1%7D%5En%5Ctextup%7BE%7D%28x_i%2Cy_i%29) where ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) is the edge map (the image above). To approximate this desired curve, we could use the simple and well-known <i>gradient descent<i/> with the function ![](https://latex.codecogs.com/svg.latex?-%5Ctextup%7BE%7D)
