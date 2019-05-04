@@ -1,6 +1,10 @@
 # Deep Structured Active Contours
 ## Active Contours.
-
+Let's consider following image.
 ![Imgur](https://i.imgur.com/NprbwMm.png)
-![equation](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
-![qqq](https://latex.codecogs.com/svg.latex?%5Clarge%20x%3D%5Cfrac%7By%7D%7B2%7D)
+There are three colored shapes. We want to draw the boundary of only one of them. We choose one and ask the computer to draw its boundaty.
+
+The way we are going to solve it is by drawing a small circle inside and <i>evolving<i/> it as in the following images.
+[Imgur](https://i.imgur.com/3o2u3mG.gifv)
+[Imgur](https://i.imgur.com/ZEE3uon.gifv)
+[Imgur](https://i.imgur.com/CyrZhW1.gifv)
