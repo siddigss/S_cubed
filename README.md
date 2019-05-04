@@ -10,5 +10,8 @@ We are going to solve this problem using the <i>Active Contoues Method<i/> which
 ![Imgur](https://i.imgur.com/ZEE3uon.gif)
 ![Imgur](https://i.imgur.com/CyrZhW1.gif)<br>
 
-By evolution of a curve we mean a sequence of curves ![](https://latex.codecogs.com/svg.latex?u_0%2Cu_1%2Cu_2%2C....)
-We want the curve to get closer to the <i>edges<i/>(The places where the gradient of the image is high) of the image. 
+By evolution of a curve we mean a sequence of curves ![](https://latex.codecogs.com/svg.latex?u_0%2Cu_1%2Cu_2%2C....). We want this equence to get closer to the <i>edges<i/>(The places where the gradient of the image is high) of our shape as the index of sequence increase.<br>
+![Imgur](https://i.imgur.com/t5FGmJ1.png)<br>
+
+
+
