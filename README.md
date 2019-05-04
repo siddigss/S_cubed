@@ -1,4 +1,4 @@
 # S_cubed
 some edits
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
-![\Large x=y](https://latex.codecogs.com/svg.latex?x%3Dy)
+![\large x=\frac{y}{2}](https://latex.codecogs.com/gif.latex?%5Clarge%20x%3D%5Cfrac%7By%7D%7B2%7D)
