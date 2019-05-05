@@ -15,6 +15,6 @@ where ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) is the edge map
 ![](https://latex.codecogs.com/svg.latex?u_%7Bk&plus;1%7D%3Du_k&plus;%5Calpha%5Cnabla%20L)<br>
 However we quickly see that this will not work properly as in the middle of the shapes there is no change in color at all and so our small initial polygon will not evolve at all using the gradient descent. To fix this we define the <i>Balloon Force<i/>.<br>
   
-At each vertix of the curve ![](https://latex.codecogs.com/svg.latex?u%3D%5C%7B%28x_1%2Cy_1%29%2C%28x_2%2Cy_2%29%2C...%2C%28x_n%2Cy_n%29%5C%7D) we define the normal vector![](https://latex.codecogs.com/svg.latex?N_i%20%3D%20%28y_%7Bi-1%7D-y_i%2Cx_%7Bi&plus;1%7D-x_%7Bi-1%7D%29) (or negative this vector depending on orientation). We then solve the following equation<br>
+At each vertix of the curve ![](https://latex.codecogs.com/svg.latex?u%3D%5C%7B%28x_1%2Cy_1%29%2C%28x_2%2Cy_2%29%2C...%2C%28x_k%2Cy_k%29%5C%7D) we define the normal vector![](https://latex.codecogs.com/svg.latex?N_i%20%3D%20%28y_%7Bi-1%7D-y_i%2Cx_%7Bi&plus;1%7D-x_%7Bi-1%7D%29) (or negative this vector depending on orientation). We then solve the following equation<br>
 ![](https://latex.codecogs.com/svg.latex?u_%7Bk&plus;1%7D%3Du_k&plus;%5Calpha%5Cnabla%20L%20&plus;%5Cbeta%20N)<br>
 for appropriate choice of constants ![](https://latex.codecogs.com/svg.latex?%5Calpha%2C%20%5Cbeta).
