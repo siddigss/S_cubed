@@ -13,7 +13,7 @@ In other words we look for a curve ![](https://latex.codecogs.com/svg.latex?u%3D
 ![](https://latex.codecogs.com/svg.latex?L%3D%5Csum_%7Bi%3D1%7D%5En%5Ctextup%7BE%7D%28x_i%2Cy_i%29)<br>
 where ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) is the edge map (the image above). To approximate this desired curve, we could use the simple and well-known <i>gradient descent<i/> with the function ![](https://latex.codecogs.com/svg.latex?-L)<br>
 ![](https://latex.codecogs.com/svg.latex?u_%7Bk&plus;1%7D%3Du_k&plus;%5Calpha%5Cnabla%20L)<br>
-However we quickly see that this will not work properly as in the middle of the shapes there is no change in color at all and so our small initial polygon will not evolve at all using the gradient descent. To fix this we define the <i>Balloon Force<i/>.<br>
+However we quickly see that this will not work properly as in the middle of the shapes there is no change in color at all and so our small initial polygon will not evolve at all using the gradient descent. To fix this we add a term that gives a push into the normal direction of the curve(<i>Balloon Force<i/>).<br>
   
 At each vertix of the curve ![](https://latex.codecogs.com/svg.latex?u%3D%5C%7B%28x_1%2Cy_1%29%2C%28x_2%2Cy_2%29%2C...%2C%28x_n%2Cy_n%29%5C%7D) we define the normal vector![](https://latex.codecogs.com/svg.latex?N_i%20%3D%20%28y_%7Bi-1%7D-y_%7Bi+1%7D%2Cx_%7Bi&plus;1%7D-x_%7Bi-1%7D%29) (or negative this vector depending on orientation, and indices are taken modulo n). We then solve the following equation<br>
 ![](https://latex.codecogs.com/svg.latex?u_%7Bk&plus;1%7D%3Du_k&plus;%5Calpha%5Cnabla%20L%20&plus;%5Cbeta%20N)<br>
