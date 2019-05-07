@@ -1,4 +1,5 @@
 # Active Contours.
+##First Ideas
 Let's consider following image.<br>
 <p align="center">
 <img src= https://i.imgur.com/NprbwMm.png><br>
@@ -22,7 +23,7 @@ We can look for a curve ![](https://latex.codecogs.com/svg.latex?u%3D%5C%7B%28x_
 <img src= https://latex.codecogs.com/svg.latex?L%3D%5Csum_%7Bi%3D1%7D%5En%5Ctextup%7BE%7D%28x_i%2Cy_i%29><br>
 </p>
 
-where ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) is the edge map (the image above). To approximate this desired curve, we will use the simple and well-known [gradient descent](https://en.wikipedia.org/wiki/Gradient_descent) with the function ![](https://latex.codecogs.com/svg.latex?-L). That is we consider the following sequence of curves with some initial curve ![](https://latex.codecogs.com/svg.latex?u_0) (this is the small polygon in our implementation)<br>
+where ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) is the edge map as in the image above.  To approximate this desired curve, we will use the simple and well-known [gradient descent](https://en.wikipedia.org/wiki/Gradient_descent) with the function ![](https://latex.codecogs.com/svg.latex?-L). That is we consider the following sequence of curves with some initial curve ![](https://latex.codecogs.com/svg.latex?u_0) (this is the small polygon in our implementation)<br>
 
 <p align="center">
 <img src= https://latex.codecogs.com/svg.latex?u_%7Bk&plus;1%7D%3Du_k&plus;%5Calpha%5Cnabla%20L><br>
@@ -39,10 +40,15 @@ We now *evolve* our initial curve according to the following recursion<br>
 <img src= https://latex.codecogs.com/svg.latex?%5Clarge%20u_%7Bk&plus;1%7D%20%3D%20u_k%20&plus;%20%5Calpha%5Cnabla%20L%20&plus;%20%5Cunderbrace%7B%5Cbeta%20N%7D_%7B%5Ctextup%7BBalloon%7D%7D><br>
 </p>
 
-for appropriate choice of constants ![](https://latex.codecogs.com/svg.latex?%5Calpha%2C%20%5Cbeta).
+for appropriate choice of constants ![](https://latex.codecogs.com/svg.latex?%5Calpha%2C%20%5Cbeta).<br>
+After implementing, we notice that we may overshoot the edges or the *force* at the edges induced from ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) pushes back the curve and messes it. To remedey this we will *delocalize* ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) by bluring it with a Gaussian. This will increase the effective range of ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) and smoothen its force.
 
-Implementing the above with ![](https://latex.codecogs.com/svg.latex?%5Calpha%3D%5Cbeta%3D1), we find that the result is still not very satisfying.<br>
+##Improvements
+
+Implementing the above with ![](https://latex.codecogs.com/svg.latex?%5Calpha%3D%5Cbeta%3D1), we find that the result is not very satisfying.<br>
 <p align="center">
 <img src= https://i.imgur.com/K5FLqKT.png><br>
 </p>
 
+We see at least two problems.
+1.The curve stops before reach the edge. The reason is the *energy* ![](https://latex.codecogs.com/svg.latex?E) is in fact blurred 
