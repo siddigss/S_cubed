@@ -7,7 +7,7 @@ There are three colored shapes. We want to draw the boundary of only one of them
 ![Imgur](https://i.imgur.com/ZEE3uon.gif)
 ![Imgur](https://i.imgur.com/CyrZhW1.gif)<br>
 
-We want our curve to be at the <i>edges<i/>(The places where the change of the image colors is high as in the image below) of the image.<br>
+We want our final curve to be at the ![edges](https://en.wikipedia.org/wiki/Edge_detection) (The places where the change of the image colors is high as in the image below) of the image. <br>
 ![Edges of the image](https://i.imgur.com/t5FGmJ1.png)<br>
 We can look for a curve ![](https://latex.codecogs.com/svg.latex?u%3D%5C%7B%28x_1%2Cy_1%29%2C%28x_2%2Cy_2%29%2C...%2C%28x_n%2Cy_n%29%5C%7D) that <i>locally<i/> (because we only want the boundary of our shape even if it not the absolute maximum) maximizes<br>
 ![](https://latex.codecogs.com/svg.latex?L%3D%5Csum_%7Bi%3D1%7D%5En%5Ctextup%7BE%7D%28x_i%2Cy_i%29)<br>
