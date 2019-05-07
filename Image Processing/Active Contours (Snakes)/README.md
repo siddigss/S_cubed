@@ -41,14 +41,15 @@ We now *evolve* our initial curve according to the following recursion<br>
 </p>
 
 for appropriate choice of constants ![](https://latex.codecogs.com/svg.latex?%5Calpha%2C%20%5Cbeta).<br>
-After implementing, we notice that we may overshoot the edges or the *force* at the edges induced from ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) pushes back the curve and messes it. To remedey this we will *delocalize* ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) by bluring it with a Gaussian. This will increase the effective range of ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) and smoothen its force.
+
+After implementing with different ![](https://latex.codecogs.com/svg.latex?%5Calpha%2C%5Cbeta), we notice two bad scenarios. We may overshoot the edges if the ballon force was very stronger or the *force* at the edges induced from ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) pushes back the curve and messes it. To remedey this we will *delocalize* ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) by bluring it with a Gaussian. This will increase the effective range of ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) and smoothen its force.
 
 ##Improvements
 
-Implementing the above with ![](https://latex.codecogs.com/svg.latex?%5Calpha%3D%5Cbeta%3D1), we find that the result is not very satisfying.<br>
+Implementing the above ideas with ![](https://latex.codecogs.com/svg.latex?%5Calpha%3D%5Cbeta%3D1), we find that the result is still not very satisfying.<br>
 <p align="center">
 <img src= https://i.imgur.com/K5FLqKT.png><br>
 </p>
 
 We see at least two problems.
-1.The curve stops before reach the edge. The reason is the *energy* ![](https://latex.codecogs.com/svg.latex?E) is in fact blurred 
+1.The curve stops before reaching the edge. Theis is the *energy* ![](https://latex.codecogs.com/svg.latex?E) is in fact blurred 
