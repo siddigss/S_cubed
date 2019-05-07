@@ -4,7 +4,7 @@ Let's consider following image.<br>
 <img src= https://i.imgur.com/NprbwMm.png><br>
 </p>
 
-There are three colored shapes. Our first goal is draw the boundary of only one of them which we=e are going to do using the **Active Contours Method**. The method is visualized below by starting from a small polygon inside the chosen shape and *evolving* it.<br>
+There are three colored shapes. Our first goal is draw the boundary of only one of the shapes which we are going to do using the **Active Contours Method**. The method is visualized below by starting from a small polygon inside the chosen shape and *evolving* it.<br>
 <p align="center">
 <img src= https://i.imgur.com/3o2u3mG.gif>
 <img src= https://i.imgur.com/ZEE3uon.gif>
