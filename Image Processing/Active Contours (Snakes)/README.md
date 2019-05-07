@@ -46,7 +46,7 @@ After implementing with different ![](https://latex.codecogs.com/svg.latex?%5Cal
 
 <p align="center">
 <img src= https://imgur.com/GR8vn46.png><br>
-<sub>Implemention with</sub> <img src= "https://latex.codecogs.com/svg.latex?%5Calpha%3D%5Cbeta%3D1" width="10">
+<sub>Implemention with</sub> <img src= "https://latex.codecogs.com/svg.latex?%5Calpha%3D%5Cbeta%3D1" width="30">
 </p>
 
 From this image we see that the curve is not *smooth* enough. As we can see in the picture some edges are longer than others. Indeed the mean edge length in our curve is `7.77` while the standard devaition is `14`. This indicates that some vertices are getting closer and some are getting further. A quick fix for this is check our curve after every few gradient descent iterations to delete the short edges and add additional vertices in the middle of the long edges. Indeed implementing this idea reduced the standard variation to `1.18` with mean `5.16` and the number of vertices increased to `179` as opposed to the fixed number of edges we started with `100`.
