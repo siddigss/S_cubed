@@ -30,10 +30,11 @@ where ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) is the edge map
 
 However we quickly see that this will not work properly as in the middle of the shapes there is no change in color at all and hence our small initial polygon will not evolve at all using the gradient descent. To fix this we add a term that gives a push into the normal direction of the curve (*Balloon Force*). To this end we define at each vertix of the curve ![](https://latex.codecogs.com/svg.latex?u%3D%5C%7B%28x_1%2Cy_1%29%2C%28x_2%2Cy_2%29%2C...%2C%28x_n%2Cy_n%29%5C%7D) the *normal vector*
 <p align="center">
-<img src= https://latex.codecogs.com/svg.latex?N_i%20%3D%20%5Cfrac%7B1%7D%7B%7C%7C%28y_%7Bi-1%7D-y_%7Bi&plus;1%7D%2Cx_%7Bi&plus;1%7D-x_%7Bi-1%7D%29%7C%7C%7D%28y_%7Bi-1%7D-y_%7Bi&plus;1%7D%2Cx_%7Bi&plus;1%7D-x_%7Bi-1%7D%29><br>
+<img src= https://latex.codecogs.com/gif.latex?N_i%20%3D%20%5Cpm%5Cfrac%7B1%7D%7B%7C%7C%28y_%7Bi-1%7D-y_%7Bi&plus;1%7D%2Cx_%7Bi&plus;1%7D-x_%7Bi-1%7D%29%7C%7C%7D%28y_%7Bi-1%7D-y_%7Bi&plus;1%7D%2Cx_%7Bi&plus;1%7D-x_%7Bi-1%7D%29><br>
 </p>
 
-(or negative this vector depending on orientation, and indices are taken modulo n). We then consider the following recursion<br>
+the sign depends on orientation (clockwise or anti-clockwise) and indices are taken modulo n.
+We now consider the following recursion<br>
 <p align="center">
 <img src= https://latex.codecogs.com/svg.latex?%5Clarge%20u_%7Bk&plus;1%7D%20%3D%20u_k%20&plus;%20%5Calpha%5Cnabla%20L%20&plus;%20%5Cunderbrace%7B%5Cbeta%20N%7D_%7B%5Ctextup%7BBalloon%7D%7D><br>
 </p>
