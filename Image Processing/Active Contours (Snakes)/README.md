@@ -44,14 +44,12 @@ for appropriate choice of constants ![](https://latex.codecogs.com/svg.latex?%5C
 
 After implementing with different ![](https://latex.codecogs.com/svg.latex?%5Calpha%2C%5Cbeta), we notice two bad scenarios. We may overshoot the edges if the ballon force was very stronger or the *force* at the edges induced from ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) pushes back the curve and messes it. To remedey this we will *delocalize* ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) by bluring it with a Gaussian. This will increase the effective range of ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) and smoothen its force.
 
-**Improvements**
-
-Implementing the above ideas with ![](https://latex.codecogs.com/svg.latex?%5Calpha%3D%5Cbeta%3D1), we find that the result is still not very satisfying.<br>
+Implementing the above ideas with ![](https://latex.codecogs.com/svg.latex?%5Calpha%3D%5Cbeta%3D1), we find<br>
 <p align="center">
-<img src= https://i.imgur.com/K5FLqKT.png><br>
+<img src= https://imgur.com/GR8vn46.png><br>
 </p>
 
-From this image we see at least two problems.
-1. The curve is not *smooth* enough. As we can see in the picture some edges are longer than others. Indeed the mean edge length in our curve is `7.77` while the standard devaition is `14`. This indicates that some vertices are getting closer and some are getting further. A quick fix for this is check our curve after every few gradient descent iterations to delete the short edges and add additional vertices in the middle of the long edges.
-
-2.The curve stops before reaching the edge. Theis is the *energy* ![](https://latex.codecogs.com/svg.latex?E) is in fact blurred 
+From this image we see that the curve is not *smooth* enough. As we can see in the picture some edges are longer than others. Indeed the mean edge length in our curve is `7.77` while the standard devaition is `14`. This indicates that some vertices are getting closer and some are getting further. A quick fix for this is check our curve after every few gradient descent iterations to delete the short edges and add additional vertices in the middle of the long edges. Indeed implementing this idea reduced the standard variation to `1.18` with mean `5.16` and the number of vertices increased to `179` as opposed to the fixed number of edges we started with `100`.
+<p align="center">
+<img src= https://imgur.com/6Ai9XjC.png><br>
+</p>
