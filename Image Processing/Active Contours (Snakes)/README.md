@@ -1,6 +1,8 @@
 # Active Contours.
 Let's consider following image.<br>
-![Imgur](https://i.imgur.com/NprbwMm.png)<br>
+<p align="center">
+<img src= https://i.imgur.com/NprbwMm.png><br>
+</p>
 
 There are three colored shapes. We want to draw the boundary of only one of them. We are going to solve this problem using the **Active Contours Method** which is visualized below by drawing a small polygon inside the chosen shape and *evolving* it.<br>
 ![Imgur](https://i.imgur.com/3o2u3mG.gif)
