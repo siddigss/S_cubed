@@ -52,6 +52,6 @@ Implementing the above ideas with ![](https://latex.codecogs.com/svg.latex?%5Cal
 </p>
 
 From this image we see at least two problems.
-1. The curve is not *smooth* enough. As we can see in the picture some edges are longer than others. Indeed the mean edge length in our curve is 7.77 while the standard devaition is 14. This indicates that some vertices are getting closer and some are getting further. A quick fix for this is check our curve after every few gradient descent iterations to delete the short edges and add additional vertices in the middle of the long edges.
+1. The curve is not *smooth* enough. As we can see in the picture some edges are longer than others. Indeed the mean edge length in our curve is `7.77` while the standard devaition is `14`. This indicates that some vertices are getting closer and some are getting further. A quick fix for this is check our curve after every few gradient descent iterations to delete the short edges and add additional vertices in the middle of the long edges.
 
 2.The curve stops before reaching the edge. Theis is the *energy* ![](https://latex.codecogs.com/svg.latex?E) is in fact blurred 
