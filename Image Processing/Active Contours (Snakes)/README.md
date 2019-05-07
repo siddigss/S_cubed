@@ -55,4 +55,4 @@ From this image we see that the curve is not *smooth* enough. As we can see in t
 <sub>In this implementation short and long edges are defined to be those the are shorter than half the mean length and those that are longer than one half the mean length respectively.</sub>
 </p>
 
-This look promising !! Let's try it with the blue shape
+This look much better! Although we would like the boundary curve to look more *smooth* (look at the blue shape above).
