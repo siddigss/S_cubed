@@ -5,9 +5,11 @@ Let's consider following image.<br>
 </p>
 
 There are three colored shapes. We want to draw the boundary of only one of them. We are going to solve this problem using the **Active Contours Method** which is visualized below by drawing a small polygon inside the chosen shape and *evolving* it.<br>
-![Imgur](https://i.imgur.com/3o2u3mG.gif)
-![Imgur](https://i.imgur.com/ZEE3uon.gif)
-![Imgur](https://i.imgur.com/CyrZhW1.gif)<br>
+<p align="center">
+<img src= https://i.imgur.com/3o2u3mG.gif>
+<img src= https://i.imgur.com/ZEE3uon.gif>
+<img src= https://i.imgur.com/CyrZhW1.gif>
+</p>
 
 In other words we want to draw a curve as close as possible to the ![edges](https://en.wikipedia.org/wiki/Edge_detection) (The places where the change of the image colors is high as in the image below) of the chosen shape the image. <br>
 <p align="center">
