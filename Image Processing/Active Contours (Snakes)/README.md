@@ -25,10 +25,11 @@ We can look for a curve ![](https://latex.codecogs.com/svg.latex?u%3D%5C%7B%28x_
 
 where ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) is the edge map as in the image above.  To approximate this desired curve, we will use the simple and well-known [gradient descent](https://en.wikipedia.org/wiki/Gradient_descent) with the function ![](https://latex.codecogs.com/svg.latex?-L). That is we consider the following sequence of curves with some initial curve ![](https://latex.codecogs.com/svg.latex?u_0) (this is the small polygon in our implementation)<br>
 <p align="center">
-<img src= https://latex.codecogs.com/svg.latex?u_%7Bk&plus;1%7D%5E%7B%28i%29%7D%3Du_k%5E%7B%28i%29%7D&plus;%5Calpha%5Cnabla%20L%28u_k%5E%7B%28i%29%7D%29
-><br>
-for every vertix ![](https://latex.codecogs.com/svg.latex?u%5E%7B%28i%29%7D). For simplicity of notations we will write this equation as
+<img src= https://latex.codecogs.com/svg.latex?u_%7Bk&plus;1%7D%5E%7B%28i%29%7D%3Du_k%5E%7B%28i%29%7D&plus;%5Calpha%5Cnabla%20L%28u_k%5E%7B%28i%29%7D%29><br>
 </p>
+
+for every vertix ![](https://latex.codecogs.com/svg.latex?u%5E%7B%28i%29%7D). For simplicity of notations we will write this equation as
+
 <p align="center">
 <img src= https://latex.codecogs.com/svg.latex?u_%7Bk&plus;1%7D%3Du_k&plus;%5Calpha%5Cnabla%20L><br>
 </p>
