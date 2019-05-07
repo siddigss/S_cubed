@@ -40,3 +40,9 @@ We now *evolve* our initial curve according to the following recursion<br>
 </p>
 
 for appropriate choice of constants ![](https://latex.codecogs.com/svg.latex?%5Calpha%2C%20%5Cbeta).
+
+However, the result is not satisfying yet.<br>
+<p align="center">
+<img src= https://i.imgur.com/K5FLqKT.png><br>
+</p>
+
