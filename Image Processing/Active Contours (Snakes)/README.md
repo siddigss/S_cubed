@@ -10,8 +10,10 @@ There are three colored shapes. We want to draw the boundary of only one of them
 In other words we want to draw a curve as close as possible to the ![edges](https://en.wikipedia.org/wiki/Edge_detection) (The places where the change of the image colors is high as in the image below) of the chosen shape the image. <br>
 <p align="center">
 ![Edges of the image](https://i.imgur.com/t5FGmJ1.png)<br>
+<img src= https://i.imgur.com/t5FGmJ1.png>
 Image Edges
 </p>
+
 We can look for a curve ![](https://latex.codecogs.com/svg.latex?u%3D%5C%7B%28x_1%2Cy_1%29%2C%28x_2%2Cy_2%29%2C...%2C%28x_n%2Cy_n%29%5C%7D) that <i>locally<i/> (because we only want the boundary of our shape even if it not the absolute maximum) maximizes<br>
 ![](https://latex.codecogs.com/svg.latex?L%3D%5Csum_%7Bi%3D1%7D%5En%5Ctextup%7BE%7D%28x_i%2Cy_i%29)<br>
 where ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) is the edge map (the image above). To approximate this desired curve, we could use the simple and well-known ![gradient descent](https://en.wikipedia.org/wiki/Gradient_descent) with the function ![](https://latex.codecogs.com/svg.latex?-L)<br>
