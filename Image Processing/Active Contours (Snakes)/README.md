@@ -11,7 +11,7 @@ There are three colored shapes. Our first goal is draw the boundary of only one 
 <img src= https://i.imgur.com/CyrZhW1.gif>
 </p>
 
-In other words we want to draw a curve as close as possible to the ![edges](https://en.wikipedia.org/wiki/Edge_detection) (The places where the change of the image colors is high as in the image below) of the chosen shape the image. <br>
+In other words we want to draw a curve as close as possible to the [edges](https://en.wikipedia.org/wiki/Edge_detection) (The places where the change of the image colors is high as in the image below) of the chosen shape the image. <br>
 <p align="center">
 <img src= https://i.imgur.com/t5FGmJ1.png><br>
 Image Edges (E)
@@ -22,7 +22,7 @@ We can look for a curve ![](https://latex.codecogs.com/svg.latex?u%3D%5C%7B%28x_
 <img src= https://latex.codecogs.com/svg.latex?L%3D%5Csum_%7Bi%3D1%7D%5En%5Ctextup%7BE%7D%28x_i%2Cy_i%29><br>
 </p>
 
-where ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) is the edge map (the image above). To approximate this desired curve, we will use the simple and well-known ![gradient descent](https://en.wikipedia.org/wiki/Gradient_descent) with the function ![](https://latex.codecogs.com/svg.latex?-L). That is we consider the following sequence of curves with some initial curve ![](https://latex.codecogs.com/svg.latex?u_0) (this is the small polygon in our implementation)<br>
+where ![](https://latex.codecogs.com/svg.latex?%5Ctextup%7BE%7D) is the edge map (the image above). To approximate this desired curve, we will use the simple and well-known [gradient descent](https://en.wikipedia.org/wiki/Gradient_descent) with the function ![](https://latex.codecogs.com/svg.latex?-L). That is we consider the following sequence of curves with some initial curve ![](https://latex.codecogs.com/svg.latex?u_0) (this is the small polygon in our implementation)<br>
 
 <p align="center">
 <img src= https://latex.codecogs.com/svg.latex?u_%7Bk&plus;1%7D%3Du_k&plus;%5Calpha%5Cnabla%20L><br>
