@@ -33,7 +33,7 @@ However we quickly see that this will not work properly as in the middle of the 
 <img src= https://latex.codecogs.com/gif.latex?N_i%20%3D%20%5Cpm%5Cfrac%7B1%7D%7B%7C%7C%28y_%7Bi-1%7D-y_%7Bi&plus;1%7D%2Cx_%7Bi&plus;1%7D-x_%7Bi-1%7D%29%7C%7C%7D%28y_%7Bi-1%7D-y_%7Bi&plus;1%7D%2Cx_%7Bi&plus;1%7D-x_%7Bi-1%7D%29><br>
 </p>
 
-the sign depends on orientation (clockwise or anti-clockwise) and indices are taken modulo n.
+the sign depends on orientation (clockwise or anti-clockwise) and indices are taken modulo n.<br>
 We now consider the following recursion<br>
 <p align="center">
 <img src= https://latex.codecogs.com/svg.latex?%5Clarge%20u_%7Bk&plus;1%7D%20%3D%20u_k%20&plus;%20%5Calpha%5Cnabla%20L%20&plus;%20%5Cunderbrace%7B%5Cbeta%20N%7D_%7B%5Ctextup%7BBalloon%7D%7D><br>
