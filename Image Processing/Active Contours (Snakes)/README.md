@@ -9,8 +9,7 @@ There are three colored shapes. We want to draw the boundary of only one of them
 
 In other words we want to draw a curve as close as possible to the ![edges](https://en.wikipedia.org/wiki/Edge_detection) (The places where the change of the image colors is high as in the image below) of the chosen shape the image. <br>
 <p align="center">
-![Edges of the image](https://i.imgur.com/t5FGmJ1.png)<br>
-<img src= https://i.imgur.com/t5FGmJ1.png>
+<img src= https://i.imgur.com/t5FGmJ1.png><br>
 Image Edges
 </p>
 
