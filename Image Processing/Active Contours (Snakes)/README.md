@@ -34,7 +34,7 @@ However we quickly see that this will not work properly as in the middle of the 
 </p>
 
 the sign depends on orientation (clockwise or anti-clockwise) and indices are taken modulo n.<br>
-We now consider the following recursion<br>
+We now *evolve* our initial curve according to the following recursion<br>
 <p align="center">
 <img src= https://latex.codecogs.com/svg.latex?%5Clarge%20u_%7Bk&plus;1%7D%20%3D%20u_k%20&plus;%20%5Calpha%5Cnabla%20L%20&plus;%20%5Cunderbrace%7B%5Cbeta%20N%7D_%7B%5Ctextup%7BBalloon%7D%7D><br>
 </p>
