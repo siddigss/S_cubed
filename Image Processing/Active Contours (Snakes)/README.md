@@ -7,11 +7,11 @@ Let's consider following image.<br>
 
 There are three colored shapes. Our first goal is draw the boundary of only one of the shapes which we are going to do using the **Active Contours Method**. The method is visualized below by starting from a small polygon inside the chosen shape and *evolving* it.<br>
 <p align="center">
-<img src= https://i.imgur.com/3o2u3mG.gif>
-<img src= https://i.imgur.com/ZEE3uon.gif>
+<img src= "https://media.giphy.com/media/htQzYHvO9UdMgLmkMF/giphy.gif"  width="250">
+<img src= "https://media.giphy.com/media/hWp6k4Lw18YQvMBt9n/giphy.gif" width="250">
 <img src= "https://media.giphy.com/media/W0c6dU1TD6XQcA5Dtz/giphy.gif" width="250">
 </p>
-https://i.imgur.com/CyrZhW1.gif
+
 In other words we want to draw a curve as close as possible to the [edges](https://en.wikipedia.org/wiki/Edge_detection) (The places where the change of the image colors is high as in the image below) of the chosen shape the image. <br>
 <p align="center">
 <img src= https://i.imgur.com/t5FGmJ1.png><br>
