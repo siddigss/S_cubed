@@ -9,9 +9,9 @@ There are three colored shapes. Our first goal is draw the boundary of only one 
 <p align="center">
 <img src= https://i.imgur.com/3o2u3mG.gif>
 <img src= https://i.imgur.com/ZEE3uon.gif>
-<img src= https://i.imgur.com/CyrZhW1.gif>
+<img src= https://media.giphy.com/media/W0c6dU1TD6XQcA5Dtz/giphy.gif>
 </p>
-
+https://i.imgur.com/CyrZhW1.gif
 In other words we want to draw a curve as close as possible to the [edges](https://en.wikipedia.org/wiki/Edge_detection) (The places where the change of the image colors is high as in the image below) of the chosen shape the image. <br>
 <p align="center">
 <img src= https://i.imgur.com/t5FGmJ1.png><br>
