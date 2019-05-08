@@ -28,3 +28,24 @@ def active_contours(Energy, Initial_snake, Number_of_iterations, Balloon_coeffic
             snake[i,0] = 0 if 0 > int(snake_[i,0]) else (Energy.shape[0]-1 if int(snake_[i,0]) >= Energy.shape[0] else int(snake_[i,0]))
             snake[i,1] = 0 if 0 > int(snake_[i,1]) else (Energy.shape[1]-1 if int(snake_[i,1]) >= Energy.shape[1] else int(snake_[i,1]))
     return snake
+
+def add_vertices_to_curve(curve, length1, length2):
+    N = curve.shape[0]
+    new_curve = np.array([curve[0,:]])
+    for i in range(N):
+        if (np.sqrt((curve[i,0]-curve[(i+1)%N, 0])**2 + (curve[i,1]-curve[(i+1)%N, 1])**2 ) > length1):
+            new_curve = np.append(new_curve, (curve[i,:] + curve[(i+1)%N, :])/ 2)
+        if ((not (i==N-1)) and (np.sqrt((curve[i,0]-curve[(i+1)%N, 0])**2 + (curve[i,1]-curve[(i+1)%N, 1])**2 ) > length2)):
+             new_curve = np.append(new_curve, curve[(i+1)%N,:])
+             
+    new_curve2 = np.zeros((new_curve.shape[0]//2, 2))
+    
+    for i in range(new_curve.shape[0]):
+        if(i%2==0):
+            new_curve2[i//2,0] = new_curve[i]
+        else:
+            new_curve2[i//2,1] = new_curve[i]
+    
+    return new_curve2
+
+
