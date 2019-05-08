@@ -3,7 +3,7 @@ import scipy
 from PIL import Image, ImageDraw, ImageFilter
 import matplotlib.pyplot as plt
 from matplotlib import cm
-from active_contours import active_contours, renormalize_curve, add_vertices_to_curve, active_contours_length
+from active_contours import active_contours, add_vertices_to_curve
 import time
 
 #Loding the image
