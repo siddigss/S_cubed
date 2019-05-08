@@ -66,7 +66,7 @@ From this image we see that the curve is not *smooth* enough. As we can see in t
 <sub>In this implementation short and long edges are defined to be those the are shorter than half the mean length and those that are longer than one half the mean length respectively.</sub>
 </p>
 
-This looks much better! If we now look at the boundary of the blue shape above, we see that there is an unnecessary part we would like to get rid of. decreasing the number of vertices we start with improves the result and the results are shown in the three gifs at the begining of the page.
+This looks much better! If we now look at the boundary of the blue shape above, we see that there is an unnecessary part we would like to get rid of. decreasing the number of vertices we start with improves the results.
 
 <p align="center">
 <img src= "https://media.giphy.com/media/htQzYHvO9UdMgLmkMF/giphy.gif"  width="250">
