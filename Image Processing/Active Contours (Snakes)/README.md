@@ -60,4 +60,13 @@ From this image we see that the curve is not *smooth* enough. As we can see in t
 <sub>In this implementation short and long edges are defined to be those the are shorter than half the mean length and those that are longer than one half the mean length respectively.</sub>
 </p>
 
-This looks much better! If we now look at the boundary of the blue shape above, we see that there is an unnecessary part we would like to get rid of. An idea to do this is to minimize with respect to length as well while doing the gradient descent. Since the gradient descent we use tries to minimzes ![](https://latex.codecogs.com/svg.latex?-L), for this we can try to minimize ![](https://latex.codecogs.com/svg.latex?-L%28u%29%20&plus;%20r%20%5Ctextup%7BLength%7D%28u%29) for a small ![](https://latex.codecogs.com/svg.latex?r), because we don't want the minimization process to focus on the length too much, our priority is minimzing ![](https://latex.codecogs.com/svg.latex?-L).
+This looks much better! If we now look at the boundary of the blue shape above, we see that there is an unnecessary part we would like to get rid of. decreasing the number of vertices we start with improves the result and the results are shown in the three gifs at the begining of the page.
+
+<p align="center">
+<img src= "https://media.giphy.com/media/htQzYHvO9UdMgLmkMF/giphy.gif"  width="250">
+<img src= "https://media.giphy.com/media/hWp6k4Lw18YQvMBt9n/giphy.gif" width="250">
+<img src= "https://media.giphy.com/media/W0c6dU1TD6XQcA5Dtz/giphy.gif" width="250"><br>
+<sub>Number of vertices of the the initial polygon = `30` and <img src= "https://latex.codecogs.com/svg.latex?%5Calpha%3D%5Cbeta%3D1" width="60"></sub>
+</p>
+
+An idea to do this is to minimize with respect to length as well while doing the gradient descent. Since the gradient descent we use tries to minimzes ![](https://latex.codecogs.com/svg.latex?-L), for this we can try to minimize ![](https://latex.codecogs.com/svg.latex?-L%28u%29%20&plus;%20r%20%5Ctextup%7BLength%7D%28u%29) for a small ![](https://latex.codecogs.com/svg.latex?r), because we don't want the minimization process to focus on the length too much, our priority is minimzing ![](https://latex.codecogs.com/svg.latex?-L).
