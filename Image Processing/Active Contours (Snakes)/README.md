@@ -1,11 +1,13 @@
 # Active Contours.
 
 Let's consider following image.<br>
+
 <p align="center">
 <img src= https://i.imgur.com/NprbwMm.png><br>
 </p>
 
 There are three colored shapes. Our first goal is draw the boundary of only one of the shapes which we are going to do using the **Active Contours Method**. The method is visualized below by starting from a small polygon inside the chosen shape and *evolving* it.<br>
+
 <p align="center">
 <img src= "https://media.giphy.com/media/htQzYHvO9UdMgLmkMF/giphy.gif"  width="250">
 <img src= "https://media.giphy.com/media/hWp6k4Lw18YQvMBt9n/giphy.gif" width="250">
@@ -13,12 +15,14 @@ There are three colored shapes. Our first goal is draw the boundary of only one 
 </p>
 
 In other words we want to draw a curve as close as possible to the [edges](https://en.wikipedia.org/wiki/Edge_detection) (The places where the change of the image colors is high as in the image below) of the chosen shape the image. <br>
+
 <p align="center">
 <img src= https://i.imgur.com/t5FGmJ1.png><br>
 Image Edges (E)
 </p>
 
 We can look for a curve ![](https://latex.codecogs.com/svg.latex?u%3D%5C%7B%28x_1%2Cy_1%29%2C%28x_2%2Cy_2%29%2C...%2C%28x_n%2Cy_n%29%5C%7D) that *locally maximizes* (because we only want the boundary of our shape even if it not the absolute maximum)<br>
+
 <p align="center">
 <img src= https://latex.codecogs.com/svg.latex?L%3D%5Csum_%7Bi%3D1%7D%5En%5Ctextup%7BE%7D%28x_i%2Cy_i%29><br>
 </p>
@@ -55,6 +59,7 @@ After implementing with different ![](https://latex.codecogs.com/svg.latex?%5Cal
 </p>
 
 From this image we see that the curve is not *smooth* enough. As we can see in the picture some edges are longer than others. Indeed the mean edge length in our curve is `7.77` while the standard devaition is `14`. This indicates that some vertices are getting closer and some are getting further. A quick fix for this is check our curve after every few gradient descent iterations to delete the short edges and add additional vertices in the middle of the long edges. Indeed implementing this idea reduced the standard variation to `1.18` with mean `5.16` and the number of vertices increased to `179` as opposed to the fixed number of edges we started with `100`.
+
 <p align="center">
 <img src= "https://imgur.com/6Ai9XjC.png" width="300"> <img src= "https://imgur.com/R6VlCDx.png" width="300"><br>
 <sub>In this implementation short and long edges are defined to be those the are shorter than half the mean length and those that are longer than one half the mean length respectively.</sub>
