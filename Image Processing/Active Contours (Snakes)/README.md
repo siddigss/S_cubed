@@ -69,4 +69,9 @@ This looks much better! If we now look at the boundary of the blue shape above, 
 <sub>Number of vertices of the the initial polygon = `30` and <img src= "https://latex.codecogs.com/svg.latex?%5Calpha%3D%5Cbeta%3D1" width="60"></sub>
 </p>
 
-An idea to do this is to minimize with respect to length as well while doing the gradient descent. Since the gradient descent we use tries to minimzes ![](https://latex.codecogs.com/svg.latex?-L), for this we can try to minimize ![](https://latex.codecogs.com/svg.latex?-L%28u%29%20&plus;%20r%20%5Ctextup%7BLength%7D%28u%29) for a small ![](https://latex.codecogs.com/svg.latex?r), because we don't want the minimization process to focus on the length too much, our priority is minimzing ![](https://latex.codecogs.com/svg.latex?-L).
+Let's try it with some other shapes
+
+<p align="center">
+<img src= "https://media.giphy.com/media/J4h9bxfsBjoEFnWo39/giphy.gif" width="250"><br>
+<sub>Same parameters as in the previous three images</sub>
+</p>
