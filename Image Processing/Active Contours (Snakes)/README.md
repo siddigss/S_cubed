@@ -75,3 +75,7 @@ Let's try it with some other shapes
 <img src= "https://media.giphy.com/media/J4h9bxfsBjoEFnWo39/giphy.gif" width="250"><br>
 <sub>Same parameters as in the previous three images</sub>
 </p>
+
+We see that our method works nicely in these simple settings.
+
+To be continued ... つづく ...
