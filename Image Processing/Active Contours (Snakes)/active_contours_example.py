@@ -4,7 +4,6 @@ from PIL import Image, ImageDraw, ImageFilter
 import matplotlib.pyplot as plt
 from matplotlib import cm
 from active_contours import active_contours, add_vertices_to_curve
-import time
 
 #Loding the image
 Image_name='image.png'
