@@ -1,4 +1,4 @@
 Examples with uncle Euler.
 <p align="center">
-<img src= https://imgur.com/a/Evmyp9Q><br>
+<img src= https://imgur.com/a/Evmyp9Q.png><br>
 </p>
