@@ -5,7 +5,7 @@ An implementaion of the "Deep Structured Active Contours (DSAC)" segmentation al
 # Structure.
 
 <p alighn="center">
-  <img src = "https://imgur.com/a/ZtTkhkh.png">
+  <img src=https://imgur.com/a/ZtTkhkh.png>
 <\p>
 
 
